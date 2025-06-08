@@ -2,14 +2,23 @@
 
 This project implements a deep neural network for text classification using the Yelp Review Polarity dataset. The model is designed to classify text reviews into positive or negative sentiments.
 
+## Repository
+
+```bash
+https://github.com/ps2program/Deep-Neural-Network-for-Text-Classification.git
+```
+
 ## Project Structure
 
 ```
-DNN_Project/
-├── .venv/                  # Virtual environment (created during setup)
-├── models/                 # Directory for saved model checkpoints
+Deep-Neural-Network-for-Text-Classification/
+├── data/                   # Directory for dataset (not tracked in git)
+│   └── yelp_review_polarity_csv/
+├── models/                 # Directory for saved model checkpoints (not tracked in git)
+├── .gitignore             # Git ignore rules
 ├── requirements.txt        # Project dependencies
 ├── setup.py               # Setup script for environment and dependencies
+├── DNN_Assignment01_Template.ipynb  # Main notebook for implementation
 └── README.md              # This file
 ```
 
@@ -31,8 +40,8 @@ DNN_Project/
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd DNN_Project
+git clone https://github.com/ps2program/Deep-Neural-Network-for-Text-Classification.git
+cd Deep-Neural-Network-for-Text-Classification
 ```
 
 2. Run the setup script to create a virtual environment and install dependencies:
@@ -48,6 +57,13 @@ python setup.py
 - On macOS/Linux:
 ```bash
 source ./.venv/bin/activate
+```
+
+4. Download the Yelp Review Polarity dataset:
+```bash
+# The dataset will be downloaded automatically when running the notebook
+# or you can manually download it from:
+# https://www.kaggle.com/datasets/yelp-dataset/yelp-review-polarity
 ```
 
 ## Dependencies
@@ -105,7 +121,7 @@ Potential areas for improvement:
 
 ## License
 
-[Add your license information here]
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Author
 
